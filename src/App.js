@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import Player1 from './components/Player1';
+import Player2 from './components/Player2';
+import Winner from './components/Winner';
+import { useState } from 'react'
 import './App.css';
 
 function App() {
+  
+  const [oneNum, setOneNum] = useState(0)
+  const [secondNum, setSecondNum] = useState(0)
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Winner player1={oneNum} player2={secondNum} />
+
+      <Player1 plop={setOneNum} />
+
+      <Player2 plop={setSecondNum}/>
+
+    </>
   );
 }
 

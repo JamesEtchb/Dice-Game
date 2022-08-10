@@ -1,34 +1,35 @@
-.App {
+body {
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 20px;
+  font-size: 6rem;
+  color: rgb(208, 214, 218);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dice-area {
+  margin: 0px 50px;
+  text-align: center;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  font-size: 2.5rem;
+  color: rgb(208, 214, 218);
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 320px;
 }
 
-@keyframes App-logo-spin {
+@keyframes Dice-spin {
   from {
     transform: rotate(0deg);
   }
